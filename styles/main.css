@@ -142,6 +142,10 @@ nav {
     width: 100vw;
     background-image: url(../images/engagement-hero.jpg);
     background-position: center;
+    background-size: cover;
+  }
+  .left-frame h1 {
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {

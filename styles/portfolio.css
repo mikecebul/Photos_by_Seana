@@ -68,7 +68,6 @@ body {
 /* ---  Portfolio  ---  */
 main {
   margin-left: 5rem;
-  padding: 1rem;
   background-color: #ffffff;
 }
 .navbar-cat {
@@ -91,15 +90,13 @@ main {
 }
 .nav-cat-item {
   width: 100%;
-  padding: 4rem 1rem 0 0.5rem;
+  padding: 8vh 1rem 0 0.5rem;
 }
 .nav-cat-link {
   display: flex;
   align-items: center;
   height: 5rem;
   text-decoration: none;
-}
-.nav-cat-link:hover {
 }
 .link-text {
   color: #000000;
@@ -119,6 +116,50 @@ main {
 .navbar-cat:hover .link-text {
   display: inline;
 }
+/* --- Portfolio --- */
+.main-content {
+  padding: 5vh 5vw;
+  flex: 1 1 80%;
+  min-height: 90vh;
+}
+.portfolio {
+  display: grid;
+  height: 80vh;
+
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.portfolio-item {
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-item.medium{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.portfolio-item.large{
+  grid-row: span 3;
+  grid-column: span 3;
+}
+.portfolio-item.small{
+  grid-row: span 1;
+  grid-column: span 1;
+}
+.portfolio-item.tall{
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.portfolio-item.wide{
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+
+
+
 
 /* ---   Media Queries   --- */
 @media screen and (max-width: 1024px) {
@@ -137,8 +178,8 @@ main {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 10vh;
     background-color: #cccccc;
     display: flex;
     flex-direction: column;
