@@ -32,6 +32,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 66vw;
 }
 .nav-links li {
@@ -44,6 +45,13 @@ nav {
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
   font-size: 1rem;
+  text-align: center;
+}
+
+.nav-links .active {
+  background-color: #cccccc;
+  padding: 0.25rem 0.75rem 0.25rem 1rem;
+  border-radius: 1rem;
 }
 .nav-links a:hover {
   color: #888888;
@@ -127,6 +135,14 @@ nav {
     letter-spacing: 0.1rem;
     font-size: 0.8rem;
   }
+  .right-frame {
+    display: none;
+  }
+  .left-frame {
+    width: 100vw;
+    background-image: url(../images/engagement-hero.jpg);
+    background-position: center;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -165,6 +181,15 @@ nav {
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 550px) {
+  .left-frame h1 {
+    font-size: 150%;
+  }
+  .left-frame .center-btn {
+    padding: 0.5em 2em;
+    font-size: 0.75em;
   }
 }
 
