@@ -5,11 +5,11 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
   font-family: roboto, sans-serif;
   color: #2e2e2e;
@@ -81,8 +81,6 @@ main {
 }
 .navbar-cat-nav {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,8 +93,8 @@ main {
 .nav-cat-link {
   display: flex;
   align-items: center;
-  height: 5rem;
   text-decoration: none;
+  margin-left: 8px;
 }
 .link-text {
   color: #000000;
@@ -104,12 +102,9 @@ main {
   margin-left: 1rem;
   text-decoration: none;
 }
-}
 .nav-cat-link img {
-  min-width: 2rem;
-  margin: 0 1.5rem;
+  width: 2.5em;
 }
-
 .navbar-cat:hover {
   width: 14rem;
 }
@@ -118,14 +113,14 @@ main {
 }
 /* --- Portfolio --- */
 .main-content {
-  padding: 5vh 5vw;
+  padding: 0 20px 20px 20px;
   flex: 1 1 80%;
+  height: 90vh;
   min-height: 90vh;
 }
 .portfolio {
   display: grid;
-  height: 80vh;
-
+  height: 100%;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -136,39 +131,117 @@ main {
   justify-content: center;
   align-items: center;
 }
-.portfolio-item.medium{
-  grid-row: span 2;
+.portfolio-item.medium {
+  grid-row: span 4;
   grid-column: span 2;
 }
-.portfolio-item.large{
+.portfolio-item.large {
   grid-row: span 3;
   grid-column: span 3;
 }
-.portfolio-item.small{
-  grid-row: span 1;
+.portfolio-item.small {
+  grid-row: span 3;
   grid-column: span 1;
 }
-.portfolio-item.tall{
+.portfolio-item.tall {
   grid-row: span 3;
   grid-column: span 2;
 }
-.portfolio-item.wide{
+.portfolio-item.wide {
   grid-row: span 2;
-  grid-column: span 3;
+  grid-column: span 2;
 }
-
-
-
-
+.friends {
+  background-image: url("../images/Portfolio/piggyBack.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.jay {
+  background-image: url("../images/Portfolio/jay-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.engagement {
+  background-image: url("../images/Portfolio/engagement.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.senior {
+  background-image: url("../images/Portfolio/Jordan/jordan_2-min.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.baby {
+  background-image: url("../images/Portfolio/baby.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 /* ---   Media Queries   --- */
 @media screen and (max-width: 1024px) {
+  .main-content {
+    padding: 0 10px 10px 10px;
+  }
+  .portfolio {
+    gap: 10px;
+  }
+  .portfolio-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .portfolio-item.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+  }
   .nav-links {
     width: 50%;
   }
   .nav-links a {
     letter-spacing: 0.1rem;
     font-size: 0.8rem;
+  }
+  .navbar-cat {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0;
+  }
+  .navbar-cat:hover {
+    width: 100vw;
+  }
+  .navbar-cat-nav {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-cat-item {
+    padding: 0;
+  }
+  .nav-cat-link {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  .link-text {
+    display: block;
+    margin: 3px 0 0 0;
+    font-size: 0.75em;
+  }
+  .nav-cat-link img {
+    width: 1.75em;
+  }
+  .main-content {
+    height: 80vh;
+    min-height: 80vh;
+  }
+  body {
+    height: 100vh;
+  }
+  main {
+    margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -180,8 +253,10 @@ main {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 100vh;
-    top: -2.4vh;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    top: 10vh;
     background-color: #ffffff;
     border-radius: 1em 0 0 0;
     color: #000000;
@@ -202,11 +277,9 @@ main {
   .burger {
     display: block;
   }
-
   .nav-active {
     transform: translateX(0%);
   }
-
   @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -226,5 +299,15 @@ main {
   }
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+@media screen and (max-width: 330px) {
+  .link-text {
+    display: block;
+    margin: 3px 0 0 0;
+    font-size: 0.5em;
+  }
+  .nav-cat-link img {
+    width: 1.25em;
   }
 }
