@@ -205,7 +205,7 @@ main {
     height: 10%;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    top: 90%;
     border-radius: 0;
   }
   .navbar-cat:hover {
