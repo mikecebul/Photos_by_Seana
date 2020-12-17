@@ -184,6 +184,7 @@ main {
   .main-content {
     padding: 0 10px 10px 10px;
     margin: 0;
+    height: 80vh;
   }
   .portfolio {
     gap: 10px;
