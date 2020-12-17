@@ -71,7 +71,6 @@ nav {
 /* ---  Hero  ---  */
 #hero {
   display: flex;
-  top: 50%;
 }
 .left-frame,
 .right-frame {
