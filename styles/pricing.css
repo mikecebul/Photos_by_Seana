@@ -22,10 +22,6 @@ body {
   align-items: center;
   height: 10vh;
 }
-#logo_container {
-  width: 33vw;
-  height: 8vh;
-}
 .logo {
   width: 150px;
 }
