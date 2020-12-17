@@ -249,10 +249,14 @@ main {
   }
 }
 @media screen and (max-width: 768px) {
-  html,
+  html {
+    height: -webkit-fill-available;
+  }
   body {
     overflow-x: hidden;
     position: relative;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
   .nav-links {
     position: absolute;
