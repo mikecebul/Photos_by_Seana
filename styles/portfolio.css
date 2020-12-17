@@ -69,7 +69,6 @@ body {
 
 /* ---  Portfolio Navbar  ---  */
 main {
-  margin-left: 5rem;
   background-color: #ffffff;
   height: 90vh;
 }
@@ -119,6 +118,7 @@ main {
   padding: 0 20px 20px 20px;
   flex: 1 1 80%;
   height: 90vh;
+  margin-left: 5em;
 }
 .portfolio {
   display: grid;
@@ -183,6 +183,7 @@ main {
 @media screen and (max-width: 1024px) {
   .main-content {
     padding: 0 10px 10px 10px;
+    margin: 0;
   }
   .portfolio {
     gap: 10px;
