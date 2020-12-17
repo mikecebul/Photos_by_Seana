@@ -142,6 +142,9 @@ nav {
   .right-frame h1 {
     color: #ffffff;
   }
+  .right-frame .cta {
+    border: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   html,
@@ -173,7 +176,6 @@ nav {
     display: block;
   }
 }
-
 .nav-active {
   transform: translateX(0%);
 }
